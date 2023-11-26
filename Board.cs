@@ -8,15 +8,12 @@ public class Board : MonoBehaviour
     public int height;
     public GameObject tilePrefab;
     private BackgroundTile[,] allTiles;
-    // Start is called before the first frame update
     void Start()
     {
         allTiles = new BackgroundTile[width,height];
         SetUp();
         
     }
-
-    // Update is called once per frame
     private void SetUp()
     {
         for (int i = 0; i < width; i ++) {
